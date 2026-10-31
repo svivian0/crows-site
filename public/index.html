@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#28b9e9" />
+    <meta name="description" content="Crows Blog — pensamentos, links e coisas da internet." />
+    <title>Crows Blog — sua janela pra minha internet</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="desktop">
+      <div class="desktop-icon" aria-hidden="true"><span>📝</span><small>posts .md</small></div>
+      <div class="desktop-icon second-icon" aria-hidden="true"><span>🗑️</span><small>lixeira</small></div>
+
+      <section class="browser" id="browser" aria-label="Navegador Crows Blog">
+        <div class="titlebar" id="window-title">
+          <div class="titlebar-brand"><span class="tiny-browser">🌐</span> Crows Blog - Internet Explorer 5.5 [modo noturno]</div>
+          <div class="window-controls">
+            <button type="button" id="minimize" aria-label="Minimizar">_</button>
+            <button type="button" id="maximize" aria-label="Maximizar">□</button>
+            <button type="button" id="close" aria-label="Fechar">×</button>
+          </div>
+        </div>
+        <div class="menubar"><span>Arquivo</span><span>Editar</span><span>Exibir</span><span>Favoritos</span><span>Ferramentas</span><span>Ajuda</span></div>
+        <div class="toolbar">
+          <div class="tool-buttons"><button class="tool-back" aria-label="Voltar">◀</button><button class="tool-forward" aria-label="Avançar">▶</button><button aria-label="Parar">✕</button><button aria-label="Atualizar" id="refresh">↻</button><button aria-label="Início" id="home">⌂</button></div>
+          <div class="address-label">Endereço</div><div class="address-box"><span>🌐</span><span>http://www.crows-blog.net/</span><span class="address-down">▾</span></div><button class="go-button" id="go">Ir</button>
+        </div>
+        <div class="links-toolbar"><span>Links</span><a href="#posts">✎ Posts</a><a href="#neighbors">✉ Contato</a><a href="#top">☁ Topo</a></div>
+
+        <div class="browser-viewport" id="viewport">
+          <div class="website" id="home-page">
+            <header class="site-header">
+              <div class="logo-block"><div class="pixel-star">✳</div><div><a href="#top" class="site-logo">CROWS<span>_BLOG</span></a><div class="logo-sub">café, café, café, café</div></div></div>
+              <div class="welcome-banner"><b>☆ SINAL ENCONTRADO ☆</b> conexão instável</div>
+            </header>
+
+            <div class="site-nav" id="top"><a class="active" href="#top">⌂ início</a><a href="#posts">✎ diário</a><a href="#now">☻ sobre mim</a><a href="#neighbors">♡ links</a></div>
+
+            <div class="site-layout">
+              <aside class="left-column">
+                <section class="widget profile-widget" id="now">
+                  <h2><span>♥</span> quem sou eu?</h2>
+                  <div class="profile-pic"><img src="assets/crowley-avatar.jpg" alt="Retrato ilustrado de Crowley" /></div>
+                  <p><b>Oi, eu sou o Crowley.</b><br />Amante de café, redes de computadores, Magic: The Gathering e cyberpunk.</p>
+                  <div class="status"><i></i> conectado na Old Net</div>
+                  <div class="profile-facts"><span>✦ localização</span><b>127.0.0.1</b><span>✦ humor</span><b>café frio</b></div>
+                </section>
+                <section class="widget link-widget" id="neighbors">
+                  <h2>Meus Links</h2>
+                  <ul class="social-links">
+                    <li><span>X</span><a href="https://x.com/sudo_crowley" target="_blank" rel="noopener noreferrer">sudo_crowley</a></li>
+                    <li><span>GitHub</span><a href="https://github.com/svivian0" target="_blank" rel="noopener noreferrer">svivian0</a></li>
+                    <li><span>Discord</span><b>tsurukk</b></li>
+                  </ul>
+                </section>
+                <section class="widget counter-widget">
+                  <h2><span>▣</span> você é visitante nº</h2>
+                  <div class="counter">2077</div><small>desde que a página abriu ✿</small>
+                </section>
+                <div class="side-blinkie">✿ NÃO ALIMENTE OS TROLLS ✿</div>
+              </aside>
+
+              <section class="main-column" id="posts">
+                <div class="box-title">BEM VINDO AO MEU SITE</div>
+                <div class="hero-window">
+                  <h1 class="sr-only">Crows Blog</h1>
+                  <img class="hero-window-gif" src="assets/cmatrix-rain.gif" alt="Chuva de caracteres verdes em um terminal escuro" />
+                </div>
+
+                <div class="section-banner" id="latest"><span>✎</span> LOGS RECENTES <small>/// transmissões direto do meu cérebro</small></div>
+                <div class="post-list" id="post-list" aria-live="polite"><p class="posts-status">procurando arquivos de texto...</p></div>
+                <section class="post-detail" id="post-detail" aria-labelledby="post-detail-title" hidden>
+                  <button class="post-back" id="post-back" type="button">← voltar aos logs</button>
+                  <div class="post-meta" id="post-detail-meta"></div>
+                  <h2 id="post-detail-title"></h2>
+                  <div class="markdown-body" id="post-detail-body"></div>
+                </section>
+
+                <div class="more-posts"><span id="post-count">/// arquivos de texto da pasta posts/</span><a href="#top">voltar ao começo ↑</a></div>
+              </section>
+
+              <aside class="right-column">
+                <div class="widget now-playing">
+                  <h2>Escute AGORA!</h2>
+                  <a class="album-art" href="https://open.spotify.com/track/0jRnSvYidtmvaQZYX1Q5Hu?si=bc5755eee98f4540" target="_blank" rel="noopener noreferrer" aria-label="Abrir 傷口にお砂糖 no Spotify">
+                    <img src="assets/kizu-sugar-cover.jpg" alt="Capa da música 傷口にお砂糖" />
+                  </a>
+                  <a class="track-link" href="https://open.spotify.com/track/0jRnSvYidtmvaQZYX1Q5Hu?si=bc5755eee98f4540" target="_blank" rel="noopener noreferrer">傷口にお砂糖</a>
+                </div>
+                <div class="side-image-panel"><img src="https://images.alphacoders.com/128/thumb-1920-1282371.jpg" alt="Imagem decorativa cyberpunk" /></div>
+              </aside>
+            </div>
+            <footer class="site-footer"><div>© 2024 CROWS_BLOG &nbsp;·&nbsp; feito com HTML e uma quantidade suspeita de café</div><div><a href="#top">início</a> · <a href="mailto:oi@crows.blog">contato</a> · <a href="#top">voltar ao topo ↑</a></div><div class="footer-badges"><span>☁ 800×600 FOREVER ☁</span><span>✿ obrigado pela visita! ✿</span><span>HTML IS STILL COOL</span></div></footer>
+          </div>
+        </div>
+        <div class="statusbar"><span>🌐 Concluído</span><span class="status-lock">▣ Internet</span><span class="resize-grip">◢</span></div>
+      </section>
+      <div class="desktop-taskbar"><button class="start-button" id="start"><span>🪟</span> Iniciar</button><div class="task-item">🌐 &nbsp;Crows Blog - Microsoft Internet Explorer</div><div class="clock" id="clock">12:00</div></div>
+      <div class="closed-message" id="closed-message" hidden><div>🙃</div><b>Opa! Você fechou a internet.</b><p>Isso não parece certo...</p><button id="reopen">abrir Crows Blog de novo</button></div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
