@@ -36,7 +36,5 @@ Abra <http://127.0.0.1:8000>. Este servidor só entrega a página e lê os arqui
 Para gerar os arquivos estáticos da publicação, rode `npm run build` com Node.js 20 ou superior. O GitHub Actions faz isso automaticamente durante a publicação.
 
 ## Publicação pelo GitHub
-
-O workflow `.github/workflows/pages.yml` reconstrói e publica o site no GitHub Pages sempre que um `.md` novo ou alterado for enviado para `main`. Na primeira publicação, em **Settings → Pages → Build and deployment**, selecione **GitHub Actions** como fonte. Depois disso, basta adicionar ou editar arquivos em `posts/`; o workflow publica a versão atualizada.
-
-O contador de visitas é local no navegador. Os recados anônimos e a integração com banco de dados foram removidos.
+O site está atualmente hospedado no github pages
+O contador de visitas é fixo em 2077 como uma referência a cyberpunk
