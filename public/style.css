@@ -80,7 +80,7 @@ body {
 .widget p { margin: 6px 0; font-size: 15px; line-height: 1.12; }
 
 .profile-pic { width: 100%; aspect-ratio: 1; height: auto; margin: 0 auto 8px; overflow: hidden; background: #0b0b12; border: 2px ridge #58ef8b; }
-.profile-pic img { width: 100%; height: 100%; display: block; object-fit: cover; }
+.profile-pic img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: top center; }
 .profile-widget p { font-size: 15px; }
 .profile-widget p b { color: #13268f; }
 .status { padding-top: 4px; border-top: 1px dashed #aaa; color: #287d32; font-size: 14px; }
